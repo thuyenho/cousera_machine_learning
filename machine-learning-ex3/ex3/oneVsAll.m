@@ -13,7 +13,7 @@ n = size(X, 2);
 
 % You need to return the following variables correctly 
 all_theta = zeros(num_labels, n + 1);
-
+disp(size(all_theta))
 % Add ones to the X data matrix
 X = [ones(m, 1) X];
 
@@ -56,7 +56,8 @@ for c = 1:num_labels
         initial_theta, options);
     all_theta(c, 1:end) = theta;
 end
-%disp(all_theta)
+disp('Here')
+disp(all_theta)
 %all_theta;
     
 
